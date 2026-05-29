@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido em HTML, CSS e JavaScript, com foco em apresenta
 
 ## Prévia
 
-![Tela do Sistema LJV](assets/images/sistema-ljv/vendas.png)
+![Prévia](assets/images/previa.png)
 
 ## Sobre
 
