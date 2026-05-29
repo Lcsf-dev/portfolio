@@ -1,0 +1,440 @@
+/* --- ESTILO GERAL --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f5f7fb;
+    color: #28313d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    width: 100%;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+/* --- ESTILO DA FOTO DE PERFIL --- */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Mantém a foto circular */
+    border: 4px solid #3498db; /* Borda azul profissional */
+    object-fit: cover; /* Evita que a imagem fique esticada */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.music-player {
+    margin-top: 15px;
+}
+
+.music-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.music-button:hover {
+    background-color: #2980b9;
+}
+
+section {
+    max-width: 1080px;
+    width: 90%;
+    margin: 20px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* --- CARDS DE PROJETO --- */
+.projeto-card {
+    border-left: 6px solid #3498db;
+    padding: 24px;
+    background: #fdfdfd;
+    border-radius: 0 8px 8px 0;
+}
+
+.projeto-ljv {
+    border-left-color: #16a085;
+}
+
+.projeto-header {
+    padding: 22px;
+    background: linear-gradient(135deg, #eef8f6, #f8fbff);
+    border: 1px solid #d9ece8;
+    border-radius: 8px;
+}
+
+.projeto-header h3 {
+    margin: 10px 0;
+    color: #17324d;
+    font-size: 1.45rem;
+}
+
+.projeto-header p {
+    margin: 0;
+    color: #425466;
+}
+
+.projeto-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    background: #16324f;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.project-highlight {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e3e8ef;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(24, 49, 83, 0.06);
+}
+
+.project-highlight strong,
+.project-highlight span {
+    display: block;
+}
+
+.project-highlight strong {
+    color: #17324d;
+    margin-bottom: 6px;
+}
+
+.project-highlight span {
+    color: #526170;
+    font-size: 0.92rem;
+}
+
+.projeto-content {
+    display: grid;
+    gap: 16px;
+}
+
+.projeto-section {
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #e7ebf0;
+    border-radius: 8px;
+}
+
+.projeto-section h4 {
+    margin: 0 0 10px;
+    color: #17324d;
+    font-size: 1rem;
+}
+
+.projeto-section p {
+    margin: 0;
+}
+
+.feature-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+.feature-list li:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    background-color: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+    color: #bd3f76;
+    font-size: 0.9rem;
+}
+
+.project-gallery-details {
+    margin-top: 18px;
+    border: 1px solid #dbe5ee;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.project-gallery-details summary {
+    padding: 14px 18px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    padding: 0 18px 18px;
+}
+
+.project-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #dfe6ee;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.project-gallery a {
+    display: block;
+    cursor: zoom-in;
+}
+
+.project-gallery img {
+    display: block;
+    width: 100%;
+    height: clamp(180px, 30vw, 340px);
+    object-fit: contain;
+    background: #eef3f8;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.project-gallery a:hover img,
+.project-gallery a:focus-visible img {
+    filter: brightness(0.92);
+    transform: scale(1.02);
+}
+
+.project-gallery figcaption {
+    padding: 10px 12px;
+    color: #314154;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.lightbox-open {
+    overflow: hidden;
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(12, 22, 35, 0.86);
+}
+
+.image-lightbox.is-open {
+    display: flex;
+}
+
+.image-lightbox-img {
+    max-width: 98vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8fafc;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.image-lightbox-close {
+    position: fixed;
+    top: 18px;
+    right: 22px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.image-lightbox-close:hover,
+.image-lightbox-close:focus-visible {
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.image-lightbox-caption {
+    position: fixed;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 8px 14px;
+    color: #fff;
+    background: rgba(12, 22, 35, 0.72);
+    border-radius: 999px;
+    font-weight: 700;
+}
+.py-var { color: #9cdcfe; }
+
+/* --- GRID DE CERTIFICADOS --- */
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #3498db;
+}
+
+.cert-info h3 { 
+    margin: 0 0 10px; 
+    font-size: 1rem; 
+    color: #2c3e50; 
+}
+
+.cert-info p { 
+    margin: 4px 0; 
+    font-size: 0.85rem; 
+    color: #555; 
+}
+
+.cert-data { 
+    display: block; 
+    font-size: 0.78rem; 
+    color: #444; 
+    margin-top: 8px; 
+    font-weight: 600;
+}
+
+.btn-cert {
+    margin-top: 15px;
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: white !important;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-cert:hover { 
+    background-color: #2980b9; 
+    text-decoration: none !important; 
+}
+
+/* --- DETAILS/SUMMARY --- */
+details summary { 
+    color: #3498db; 
+    font-weight: bold; 
+    cursor: pointer; 
+    padding: 10px 0; 
+}
+
+/* --- RODAPÉ --- */
+footer { 
+    padding: 40px; 
+    text-align: center; 
+    color: #7f8c8d; 
+}
+
+footer a { 
+    color: #3498db; 
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    section {
+        width: 92%;
+        padding: 22px;
+    }
+
+    .projeto-card {
+        padding: 16px;
+    }
+
+    .projeto-header {
+        padding: 18px;
+    }
+
+    .projeto-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+        padding: 0 14px 14px;
+    }
+
+    .project-gallery img {
+        height: clamp(170px, 56vw, 260px);
+    }
+
+    .image-lightbox {
+        padding: 16px;
+    }
+
+    .image-lightbox-img {
+        max-width: 98vw;
+        max-height: 86vh;
+    }
+
+    .image-lightbox-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .image-lightbox-caption {
+        width: calc(100% - 32px);
+        text-align: center;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lucas Fernandes</title>
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/favicon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon-180x180.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="assets/images/perfil.png" alt="Foto de perfil de Lucas Fernandes" class="foto-perfil">
+        <h1>Lucas Fernandes</h1>
+        <p>Desenvolvedor</p>
+
+        <div class="music-player">
+            <audio id="player" src="assets/audio/musica.mp3"></audio>
+            <button id="music-toggle" class="music-button" type="button" aria-label="Reproduzir música">
+                ▶ Play
+            </button>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        
+        <h3>Perfil Profissional</h3>
+        <p>
+            Sou profissional da área de tecnologia há 15 anos, com experiência sólida em hardware e instalação de software.
+            Desde a adolescência, sempre busquei me aprofundar nesse universo, realizando diversos cursos, como montagem
+            e manutenção de computadores e redes de computadores.
+        </p>
+        <p>
+            Como entusiasta da área, sempre tive curiosidade em aprender e acompanhar as evoluções tecnológicas.
+            Agora, decidi dar um passo adiante na minha carreira, migrando para a área de desenvolvimento, com o objetivo
+            de expandir minhas habilidades e atuar de forma mais completa no setor de tecnologia.
+        </p>
+
+        <h3>Desenvolvimento e Habilidades</h3>
+        <p><strong>Aprimoramento Contínuo:</strong> Busco constantemente aprimorar minhas habilidades técnicas e expandir meu repertório em tecnologias modernas.</p>
+        <p><strong>Experiência Prática:</strong> Participo de cursos e projetos práticos que fortalecem minha experiência.</p>
+        <p><strong>Presença Digital:</strong> Mantenho presença ativa em plataformas como GitHub e LinkedIn.</p>
+
+        <h3>Objetivos</h3>
+        <p>Meu objetivo é atuar em ambientes desafiadores que valorizem inovação, aprendizado contínuo e colaboração.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Meu Projeto</h2>
+        <article class="projeto-card projeto-ljv">
+            <div class="projeto-header">
+                <span class="projeto-tag">ERP & PDV Serverless</span>
+                <h3>💻 Projeto: Sistema LJV</h3>
+                <p>
+                    O Sistema LJV é um ecossistema ERP/PDV All-in-One voltado para a gestão comercial de pequenas e médias empresas,
+                    integrando Vendas, Estoque, Financeiro, Relatórios Analíticos e Controle de Acessos em uma arquitetura moderna,
+                    rápida e sem custo fixo de infraestrutura.
+                </p>
+            </div>
+
+            <div class="project-highlight-grid" aria-label="Resumo do Sistema LJV">
+                <div class="project-highlight">
+                    <strong>Arquitetura</strong>
+                    <span>Serverless + Edge Computing com Cloudflare Workers.</span>
+                </div>
+                <div class="project-highlight">
+                    <strong>Dados</strong>
+                    <span>Cloudflare D1 com SQLite distribuído na Edge.</span>
+                </div>
+                <div class="project-highlight">
+                    <strong>Produto</strong>
+                    <span>PDV, estoque, financeiro, relatórios e permissões.</span>
+                </div>
+            </div>
+
+            <div class="projeto-content">
+                <div class="projeto-section">
+                    <h4>🚀 Visão Geral</h4>
+                    <p>
+                        Desenvolvido sob a premissa de alto desempenho, escalabilidade e custo zero de infraestrutura,
+                        o sistema utiliza uma arquitetura puramente Serverless e Edge Computing para entregar respostas rápidas
+                        e uma operação simples para o usuário final.
+                    </p>
+                </div>
+
+                <div class="projeto-section">
+                    <h4>🛠️ Stack Tecnológica & Arquitetura</h4>
+                    <ul class="feature-list">
+                        <li><strong>Ambiente de Execução:</strong> Cloudflare Workers, garantindo Edge Computing com tempo de resposta global ultra-baixo.</li>
+                        <li><strong>Banco de Dados:</strong> Cloudflare D1, banco relacional SQLite distribuído nativamente na Edge.</li>
+                        <li><strong>Linguagem & Tipagem:</strong> TypeScript ponta a ponta para Backend e Frontend, com consistência estática de tipos.</li>
+                        <li><strong>Roteamento & Validação:</strong> Hono Framework para HTTP leve e Zod para validação rigorosa de payloads.</li>
+                        <li><strong>Bundling & Infra:</strong> Esbuild para artefatos otimizados e Wrangler para ambientes e migrations.</li>
+                    </ul>
+                </div>
+
+                <div class="projeto-section">
+                    <h4>🎯 Destaques de Engenharia</h4>
+                    <ul class="feature-list">
+                        <li><strong>Precisão financeira:</strong> valores monetários persistidos em centavos, eliminando anomalias de arredondamento IEEE 754.</li>
+                        <li><strong>Segurança defensiva:</strong> PBKDF2, validação em tempo constante, tokens em hash SHA-256 e Rate Limiting por IP e usuário.</li>
+                        <li><strong>RBAC dinâmico:</strong> permissões granulares por módulo para acessar, criar, editar e excluir, com proteção do Admin Master.</li>
+                        <li><strong>Auditoria:</strong> registro centralizado e imutável de ações sensíveis, como exclusões, resets e exportação de backups.</li>
+                        <li><strong>DevOps local:</strong> scripts para smoke tests, verificação de banco com <code>db:verify</code> e sincronização de produção para homologação.</li>
+                    </ul>
+                </div>
+
+                <div class="projeto-section">
+                    <h4>📈 Resultados e Features de Negócio</h4>
+                    <ul class="feature-list">
+                        <li><strong>PDV fluído:</strong> busca instantânea de itens, carrinho virtual, calculadora integrada e calendário com finais de semana e feriados nacionais.</li>
+                        <li><strong>Painel em tempo real:</strong> clima local, cotação de moedas estrangeiras e rádio online com controle de volume no cabeçalho da aplicação.</li>
+                        <li><strong>Business Intelligence:</strong> cálculo de faturamento bruto e estimativa de lucro líquido por período.</li>
+                        <li><strong>Customização em runtime:</strong> motor de micro-temas com cores salvas diretamente na tabela de configurações.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <details class="project-gallery-details">
+                <summary>Ver telas do Sistema LJV</summary>
+                <div class="project-gallery" aria-label="Capturas de tela do Sistema LJV">
+                    <figure>
+                        <a href="assets/images/sistema-ljv/login.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela de login do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/login.png" alt="Tela de login do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>Login seguro</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/sistema-ljv/vendas.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela de vendas e PDV do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/vendas.png" alt="Tela de vendas e PDV do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>PDV e vendas</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/sistema-ljv/estoque.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela de controle de estoque do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/estoque.png" alt="Tela de controle de estoque do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>Estoque</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/sistema-ljv/financeiro.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela do módulo financeiro do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/financeiro.png" alt="Tela do módulo financeiro do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>Financeiro</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/sistema-ljv/relatorios.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela de relatórios analíticos do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/relatorios.png" alt="Tela de relatórios analíticos do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>Relatórios</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/sistema-ljv/sistema.png" target="_blank" rel="noopener noreferrer" aria-label="Abrir tela de configurações do Sistema LJV em tamanho real">
+                            <img src="assets/images/sistema-ljv/sistema.png" alt="Tela de configurações do Sistema LJV" loading="lazy">
+                        </a>
+                        <figcaption>Sistema</figcaption>
+                    </figure>
+                </div>
+            </details>
+        </article>
+    </section>
+    <section id="certificacoes">
+        <h2>Certificações e Cursos</h2>
+        <div class="certificados-grid">
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Python 3 - Mundo 1</h3>
+                    <p><strong>Instituição:</strong> Curso em Vídeo</p>
+                    <p><strong>Carga Horária:</strong> 40h</p>
+                    <span class="cert-data">Concluído em: 05/12/2025</span>
+                </div>
+                <a href="assets/certificates/python-3-mundo-1-curso-em-video.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Linguagem Python - Básico</h3>
+                    <p><strong>Instituição:</strong> Fundação Bradesco</p>
+                    <p><strong>Carga Horária:</strong> 18h</p>
+                    <span class="cert-data">Concluído em: 18/01/2026</span>
+                </div>
+                <a href="assets/certificates/python-basico-fundacao-bradesco.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Jornada Python</h3>
+                    <p><strong>Instituição:</strong> Hashtag Treinamentos</p>
+                    <p><strong>Carga Horária:</strong> 8h</p>
+                    <span class="cert-data">Concluído em: 15/01/2026</span>
+                </div>
+                <a href="assets/certificates/jornada-python-hashtag.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Lógica com Python</h3>
+                    <p><strong>Instituição:</strong> Estácio</p>
+                    <p><strong>Carga Horária:</strong> 30h</p>
+                    <span class="cert-data">Concluído em: 25/03/2026</span>
+                </div>
+                <a href="assets/certificates/logica-programacao-python-estacio.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Algoritmos e Lógica</h3>
+                    <p><strong>Instituição:</strong> Estácio</p>
+                    <p><strong>Carga Horária:</strong> 30h</p>
+                    <span class="cert-data">Concluído em: 25/03/2026</span>
+                </div>
+                <a href="assets/certificates/algoritmos-logica-programacao-estacio.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-info">
+                    <h3>Programação Front End</h3>
+                    <p><strong>Instituição:</strong> Estácio</p>
+                    <p><strong>Carga Horária:</strong> 170h</p>
+                    <span class="cert-data">Concluído em: 03/05/2026</span>
+                </div>
+                <a href="assets/certificates/programacao-front-end-estacio.pdf" target="_blank" class="btn-cert">Ver PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    <p>Conecte-se comigo:
+        <a href="https://github.com/Lcsf-dev" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/lucasfernandes-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+        <a href="mailto:lucaslcsf.dev@gmail.com">E-mail</a>
+    </p>
+</footer>
+</body>
+</html>
+
