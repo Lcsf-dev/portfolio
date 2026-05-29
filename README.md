@@ -4,7 +4,9 @@ Portfólio pessoal desenvolvido em HTML, CSS e JavaScript, com foco em apresenta
 
 ## Prévia
 
-![Prévia](assets/images/previa.png)
+<p align="center">
+  <img src="assets/images/previa.png" alt="Prévia do Portfólio" width="500">
+</p>
 
 ## Sobre
 
