@@ -5,7 +5,7 @@ Portfólio pessoal desenvolvido em HTML, CSS e JavaScript, com foco em apresenta
 ## Prévia
 
 <p align="center">
-  <img src="assets/images/previa.png" alt="Prévia do Portfólio" width="500">
+  <img src="assets/images/previa.png" alt="Prévia do Portfólio" width="750">
 </p>
 
 ## Sobre
